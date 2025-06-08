@@ -6,17 +6,21 @@ struct TaylorSwiftSong {
 }
 
 impl TaylorSwiftSong {
-    fn new(title: String, release_year: u32, duration_secs: u32) -> Self {
+   fn new(title: String, release_year: u32, duration_secs: u32) -> Self {
         Self { 
             title,
             release_year,
             duration_secs,
         }
-    }
+    } 
+}
+
+impl TaylorSwiftSong {
     fn display_song_info(&self) {
         println!("Title: {}", self.title);
         println!("Years since Release: {}", self.years_since_release());
         println!("Duration (secs): {}", self.duration_secs);
+
 
     }
 
