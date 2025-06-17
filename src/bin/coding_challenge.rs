@@ -41,4 +41,8 @@ struct Flight {
   passengers: u32
 }
 
+impl Flight {
+
+}
+
 fn main() {}
