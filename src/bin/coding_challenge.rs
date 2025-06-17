@@ -42,6 +42,9 @@ struct Flight {
 }
 
 impl Flight {
+  fn new(origin: String, destination: String, price:f64, passengers: u32) -> Self {
+    Flight
+  }
 
 }
 
