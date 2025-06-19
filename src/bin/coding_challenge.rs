@@ -51,6 +51,8 @@ impl Flight {
     }
   }
 
+  fn change_destination(&mut self)
+
 }
 
 fn main() {}
