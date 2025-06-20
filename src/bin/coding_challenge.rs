@@ -51,7 +51,9 @@ impl Flight {
     }
   }
 
-  fn change_destination(&mut self)
+  fn change_destination(&mut self, new_destination: String) {
+    self.destination = new_destination;
+  } 
 
 }
 
