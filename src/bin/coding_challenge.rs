@@ -53,8 +53,11 @@ impl Flight {
 
   fn change_destination(&mut self, new_destination: String) {
     self.destination = new_destination;
-  } 
+  }
 
+  fn increase_price(&mut self) {
+    self.price = self.price * 1.2;
+  }
 }
 
 fn main() {}
