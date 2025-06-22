@@ -58,6 +58,10 @@ impl Flight {
   fn increase_price(&mut self) {
     self.price = self.price * 1.2;
   }
+
+  fn intinerary(&self) {
+    println!("{} -> {}", self.origin, self.destination);
+  }
 }
 
 fn main() {}
