@@ -64,4 +64,13 @@ impl Flight {
   }
 }
 
-fn main() {}
+fn main() {
+  let my_flight = Flight::new(
+    String::from("New York"),
+    String::from("Los Angeles"),
+    299.99,
+    150,
+  );
+
+
+}
