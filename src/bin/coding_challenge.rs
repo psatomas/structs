@@ -78,11 +78,11 @@ fn main() {
   my_flight.intinerary();
   println!("{:?}", my_flight);
 
-  let another_Flight = Flight {
+  let another_flight = Flight {
     origin: String::from("Paris"),
     destination: String::from("Rome"),
     ..my_flight
   };
 
-  println!("{:#?}", another_Flight);
+  println!("{:#?}", another_flight);
 }
