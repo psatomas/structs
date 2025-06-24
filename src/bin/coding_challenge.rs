@@ -56,7 +56,7 @@ impl Flight {
   }
 
   fn increase_price(&mut self) {
-    self.price = self.price * 1.2;
+    self.price *= 1.20;
   }
 
   fn intinerary(&self) {
@@ -65,12 +65,24 @@ impl Flight {
 }
 
 fn main() {
-  let my_flight = Flight::new(
+  let mut my_flight = Flight::new(
     String::from("New York"),
     String::from("Los Angeles"),
     299.99,
     150,
   );
 
+  println!("{:?}", my_flight);
+  my_flight.change_destination(String::from("San Francisco"));
+  my_flight.increase_price();
+  my_flight.intinerary();
+  println!("{:?}", my_flight);
 
+  let another_Flight = Flight {
+    origin: String::from("Paris"),
+    destination: String::from("Rome"),
+    ..my_flight
+  };
+
+  println!("{:#?}", another_Flight);
 }
